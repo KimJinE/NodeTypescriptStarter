@@ -20,7 +20,7 @@ export class Controller {
         console.log(req.params.id);
     }
     public deleteUser(req: express.Request, res: express.Response): void {
-        console.log(req.params.id);
+        console.log("delete");
     }
 
 }
