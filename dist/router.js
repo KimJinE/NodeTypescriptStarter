@@ -14,6 +14,10 @@ class ApiRouter {
     getRouter() {
         this.router.get("/hello", this.controller.getHello);
         this.router.post("/hello", this.controller.postHello);
+        this.router.get("/users", this.controller.getUsers);
+        this.router.get("/users/:id", this.controller.getUser);
+        this.router.post("/users", this.controller.postUser);
+        this.router.put("/users/:id", this.controller.putUser);
         return this.router;
     }
 }
